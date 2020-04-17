@@ -1,0 +1,2 @@
+export const CHANGE_LOADING = 'CHANGE_LOADING'
+export const GET_REPOS = 'GET_REPOS'
