@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage Component Should match the RepoCard 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Card))
+    data-test="RepoCard-Component"
+    elevation={6}
+  >
+    <Styled(WithStyles(ForwardRef(CardHeader)))
+      avatar={
+        <UNDEFINED
+          size="medium"
+        />
+      }
+      title="Repo 2"
+      titleTypographyProps={
+        Object {
+          "variant": "h6",
+        }
+      }
+    />
+    <WithStyles(ForwardRef(CardContent))>
+      <styled.div>
+        <styled.div>
+          <LinkIcon />
+          <WithStyles(ForwardRef(Typography))
+            variant="caption"
+          >
+            Link
+          </WithStyles(ForwardRef(Typography))>
+        </styled.div>
+        <WithStyles(ForwardRef(Link))
+          href="http://www.Repo2.com"
+          rel="noopener"
+          target="_blank"
+        >
+          http://www.Repo2.com
+        </WithStyles(ForwardRef(Link))>
+      </styled.div>
+      <WithStyles(ForwardRef(Divider)) />
+      <styled.div
+        margin={true}
+      >
+        <styled.div>
+          <PersonIcon />
+          <WithStyles(ForwardRef(Typography))
+            variant="caption"
+          >
+            Owner
+          </WithStyles(ForwardRef(Typography))>
+        </styled.div>
+        <div>
+          <WithStyles(ForwardRef(Tooltip))
+            key="5"
+            title="owner5@gmail.com"
+          >
+            <WithStyles(ForwardRef(Chip))
+              icon={<UNDEFINED />}
+              label="owner5"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "4px",
+                  "padding": "4px",
+                }
+              }
+              variant="outlined"
+            />
+          </WithStyles(ForwardRef(Tooltip))>
+          <WithStyles(ForwardRef(Tooltip))
+            key="2"
+            title="owner2@gmail.com"
+          >
+            <WithStyles(ForwardRef(Chip))
+              icon={<UNDEFINED />}
+              label="owner2"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "4px",
+                  "padding": "4px",
+                }
+              }
+              variant="outlined"
+            />
+          </WithStyles(ForwardRef(Tooltip))>
+        </div>
+      </styled.div>
+      <WithStyles(ForwardRef(Divider)) />
+      <styled.div
+        margin={true}
+      >
+        <styled.div>
+          <PersonIcon />
+          <WithStyles(ForwardRef(Typography))
+            variant="caption"
+          >
+            Reviewer
+          </WithStyles(ForwardRef(Typography))>
+        </styled.div>
+        <div>
+          <WithStyles(ForwardRef(Tooltip))
+            key="8"
+            title="reviewer8@gmail.com"
+          >
+            <WithStyles(ForwardRef(Chip))
+              icon={<UNDEFINED />}
+              label="reviewer8"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "4px",
+                  "padding": "4px",
+                }
+              }
+              variant="outlined"
+            />
+          </WithStyles(ForwardRef(Tooltip))>
+          <WithStyles(ForwardRef(Tooltip))
+            key="3"
+            title="reviewer3@gmail.com"
+          >
+            <WithStyles(ForwardRef(Chip))
+              icon={<UNDEFINED />}
+              label="reviewer3"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "4px",
+                  "padding": "4px",
+                }
+              }
+              variant="outlined"
+            />
+          </WithStyles(ForwardRef(Tooltip))>
+        </div>
+      </styled.div>
+      <WithStyles(ForwardRef(Divider)) />
+      <styled.div
+        margin={true}
+      >
+        <styled.div>
+          <FolderSpecialIcon />
+          <WithStyles(ForwardRef(Typography))
+            variant="caption"
+          >
+            Repo Type
+          </WithStyles(ForwardRef(Typography))>
+        </styled.div>
+        <div>
+          <styled.div>
+            <AppsIcon
+              color="action"
+            />
+            <WithStyles(ForwardRef(Typography))
+              color="textSecondary"
+              style={
+                Object {
+                  "marginLeft": "4px",
+                }
+              }
+              variant="h6"
+            >
+              Application
+            </WithStyles(ForwardRef(Typography))>
+          </styled.div>
+        </div>
+      </styled.div>
+      <WithStyles(ForwardRef(Divider)) />
+      <styled.div
+        margin={true}
+      >
+        <styled.div>
+          <AccountTreeIcon />
+          <WithStyles(ForwardRef(Typography))
+            variant="caption"
+          >
+            Dependency
+          </WithStyles(ForwardRef(Typography))>
+        </styled.div>
+        <div>
+          <WithStyles(ForwardRef(Badge))
+            badgeContent="3.0.0"
+            color="secondary"
+            key="package3"
+            style={
+              Object {
+                "margin": "15px",
+              }
+            }
+          >
+            <WithStyles(ForwardRef(Typography))
+              color="textSecondary"
+              variant="h6"
+            >
+              package3
+            </WithStyles(ForwardRef(Typography))>
+          </WithStyles(ForwardRef(Badge))>
+          <WithStyles(ForwardRef(Badge))
+            badgeContent="2.0.0"
+            color="secondary"
+            key="package2"
+            style={
+              Object {
+                "margin": "15px",
+              }
+            }
+          >
+            <WithStyles(ForwardRef(Typography))
+              color="textSecondary"
+              variant="h6"
+            >
+              package2
+            </WithStyles(ForwardRef(Typography))>
+          </WithStyles(ForwardRef(Badge))>
+        </div>
+      </styled.div>
+      <WithStyles(ForwardRef(Snackbar))
+        autoHideDuration={1000}
+        onClose={[Function]}
+        open={false}
+      >
+        <Alerts
+          onClose={[Function]}
+          severity="success"
+        >
+          Email copied to clipboard
+        </Alerts>
+      </WithStyles(ForwardRef(Snackbar))>
+    </WithStyles(ForwardRef(CardContent))>
+  </WithStyles(ForwardRef(Card))>
+</Fragment>
+`;

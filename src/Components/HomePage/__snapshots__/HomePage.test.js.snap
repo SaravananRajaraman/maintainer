@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage Component Should match the RepoCard 1`] = `
+<styled.div
+  data-test="HomePage-Component"
+>
+  <Styled(WithStyles(ForwardRef(Button)))
+    href="#/Table"
+    startIcon={<UNDEFINED />}
+  >
+    View Table
+  </Styled(WithStyles(ForwardRef(Button)))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={2}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      key="name1"
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <RepoCard
+        Repo={
+          Object {
+            "name": "name1",
+            "owner": Array [
+              Object {
+                "email": "mail.com",
+                "id": 1,
+                "name": "owner1",
+              },
+              Object {
+                "email": "mail.com",
+                "id": 2,
+                "name": "owner2",
+              },
+            ],
+          }
+        }
+        test-data="Repocard"
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      key="name2"
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <RepoCard
+        Repo={
+          Object {
+            "name": "name2",
+            "owner": Array [
+              Object {
+                "email": "mail.com",
+                "id": 3,
+                "name": "owner3",
+              },
+              Object {
+                "email": "mail.com",
+                "id": 4,
+                "name": "owner4",
+              },
+            ],
+          }
+        }
+        test-data="Repocard"
+      />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</styled.div>
+`;
+
+exports[`Homepage Component Should match the loading skeleton 1`] = `
+<styled.div
+  data-test="HomePage-Component"
+>
+  <Styled(WithStyles(ForwardRef(Button)))
+    href="#/Table"
+    startIcon={<UNDEFINED />}
+  >
+    View Table
+  </Styled(WithStyles(ForwardRef(Button)))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={2}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      key="0"
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <RepoSkeleton />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      key="1"
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <RepoSkeleton />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</styled.div>
+`;

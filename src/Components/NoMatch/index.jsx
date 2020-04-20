@@ -11,10 +11,10 @@ const StyledBox = styled('div')({
 
 export default function NoMatch() {
   return (
-    <StyledBox>
+    <StyledBox data-test='NoMatch-Component'>
         <div>
-            <Typography variant='h1' >{'404'}</Typography>
-            <Typography variant='h6' >{'Page not found!'}</Typography>
+            <Typography variant='h1' data-test='Error'>{'404'}</Typography>
+            <Typography variant='h6' data-test='Description'>{'Page not found!'}</Typography>
         </div>        
     </StyledBox>
   );

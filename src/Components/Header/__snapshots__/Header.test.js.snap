@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Should match the snapShot 1`] = `
+<Styled(WithStyles(ForwardRef(AppBar)))
+  data-test="Header-Component"
+  position="static"
+>
+  <WithStyles(ForwardRef(Toolbar))
+    variant="dense"
+  >
+    <WithStyles(ForwardRef(Typography))
+      color="inherit"
+      data-test="Title"
+      variant="h6"
+    >
+      Maintainers Info
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Toolbar))>
+</Styled(WithStyles(ForwardRef(AppBar)))>
+`;

@@ -41,7 +41,7 @@ const getRepoData = (array) => {
 function RepoTable(props) {
         const RepoData = getRepoData(props.Repos);
   return (
-    <StyledBox>
+    <StyledBox data-test='RepoTable-Component'>
       <StyledButton href='#' startIcon={<ArrowBackIcon />}>Back</StyledButton>          
       <TableContainer component={Paper}>
         <Table >

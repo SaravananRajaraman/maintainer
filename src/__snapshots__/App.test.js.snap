@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component invalid path should match screenShot 1`] = `
+<Connect(App)
+  store={
+    Object {
+      "asyncReducers": Object {},
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectReducer": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+/>
+`;

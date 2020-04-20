@@ -139,8 +139,8 @@ export default function RepoCard({Repo}){
     const copyText = (str) => {copyToClipboard(str); handleClick();};
 
     return(
-        <React.Fragment>
-             <Card elevation={6}>
+        <React.Fragment >
+             <Card elevation={6} data-test='RepoCard-Component'>
                 <StyledHeader title={Repo.name} 
                             avatar={<FolderOpenIcon size='medium'/>}
                             titleTypographyProps = {{variant : 'h6'}}                

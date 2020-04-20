@@ -20,7 +20,7 @@ const StyledButton = styled(Button)`
 function HomePage(props){
       const {Repos,loading} = props;     
     return (
-      <StyledBox>
+      <StyledBox data-test='HomePage-Component'>
           <StyledButton href='#/Table' startIcon={<TableChartIcon />}>View Table</StyledButton>         
           <Grid container spacing={2}>
               {loading ?
@@ -30,7 +30,7 @@ function HomePage(props){
                   </Grid> ) :                    
                   Repos.map(value =>                         
                     <Grid key={value.name} item xs={12} sm={6} md={4}>
-                        <RepoCard Repo={value}/>
+                        <RepoCard test-data='Repocard' Repo={value}/>
                     </Grid>)}
           </Grid>
       </StyledBox>

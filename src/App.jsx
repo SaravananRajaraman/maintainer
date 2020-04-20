@@ -17,7 +17,7 @@ class App extends React.Component{
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment data-test='App-Component'>
           <Header/>
           <Router>
             <Switch>

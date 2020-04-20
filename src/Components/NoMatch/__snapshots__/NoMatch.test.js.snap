@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`No Match Component Should match the snapShot 1`] = `
+<styled.div
+  data-test="NoMatch-Component"
+>
+  <div>
+    <WithStyles(ForwardRef(Typography))
+      data-test="Error"
+      variant="h1"
+    >
+      404
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      data-test="Description"
+      variant="h6"
+    >
+      Page not found!
+    </WithStyles(ForwardRef(Typography))>
+  </div>
+</styled.div>
+`;
