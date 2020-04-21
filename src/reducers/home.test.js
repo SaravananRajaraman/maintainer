@@ -19,12 +19,10 @@ describe('Home reducer',()=>{
     });
 
     it('Should return the Repo data', ()=>{
-        let Repos = [{name : 'name1', owner : [{id : 1, name : 'owner1', email : 'mail.com'},
-                                               {id : 2, name : 'owner2', email : 'mail.com'}]},
-                    {name : 'name2', owner : [{id : 3, name : 'owner3', email : 'mail.com'},
-                                              {id : 4, name : 'owner4', email : 'mail.com'}]}];         
+        let Repos = {name : 'name1', owner : [{id : 1, name : 'owner1', email : 'mail.com'},
+                                               {id : 2, name : 'owner2', email : 'mail.com'}]};         
         const newState = reducer(initialState, {type: types.GET_REPOS, repos : Repos});            
-        expect(newState.Repos).toBe(Repos);
+        expect(newState.Repos[0]).toBe(Repos);
     });
 
 });

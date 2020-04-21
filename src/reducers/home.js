@@ -15,7 +15,7 @@ const initialState = {
       case types.GET_REPOS:
         return {
           ...state,          
-          Repos : action.repos
+          Repos : [...state.Repos,action.repos]
       }           
       default:
         return state;
