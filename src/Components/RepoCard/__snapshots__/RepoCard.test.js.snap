@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Homepage Component Should match the RepoCard 1`] = `
+exports[`RepoCard Component Should test the snapshot and render functionality Should match the RepoCard 1`] = `
 <Fragment>
   <WithStyles(ForwardRef(Card))
     data-test="RepoCard-Component"
@@ -55,6 +55,7 @@ exports[`Homepage Component Should match the RepoCard 1`] = `
             title="owner5@gmail.com"
           >
             <WithStyles(ForwardRef(Chip))
+              data-test="owner-5"
               icon={<UNDEFINED />}
               label="owner5"
               onClick={[Function]}
@@ -72,6 +73,7 @@ exports[`Homepage Component Should match the RepoCard 1`] = `
             title="owner2@gmail.com"
           >
             <WithStyles(ForwardRef(Chip))
+              data-test="owner-2"
               icon={<UNDEFINED />}
               label="owner2"
               onClick={[Function]}
@@ -104,6 +106,7 @@ exports[`Homepage Component Should match the RepoCard 1`] = `
             title="reviewer8@gmail.com"
           >
             <WithStyles(ForwardRef(Chip))
+              data-test="reviewer-8"
               icon={<UNDEFINED />}
               label="reviewer8"
               onClick={[Function]}
@@ -121,6 +124,7 @@ exports[`Homepage Component Should match the RepoCard 1`] = `
             title="reviewer3@gmail.com"
           >
             <WithStyles(ForwardRef(Chip))
+              data-test="reviewer-3"
               icon={<UNDEFINED />}
               label="reviewer3"
               onClick={[Function]}
@@ -217,15 +221,18 @@ exports[`Homepage Component Should match the RepoCard 1`] = `
       </styled.div>
       <WithStyles(ForwardRef(Snackbar))
         autoHideDuration={1000}
+        data-test="SnackBar"
         onClose={[Function]}
         open={false}
       >
-        <Alerts
+        <WithStyles(ForwardRef(Alert))
+          elevation={6}
           onClose={[Function]}
           severity="success"
+          variant="filled"
         >
           Email copied to clipboard
-        </Alerts>
+        </WithStyles(ForwardRef(Alert))>
       </WithStyles(ForwardRef(Snackbar))>
     </WithStyles(ForwardRef(CardContent))>
   </WithStyles(ForwardRef(Card))>

@@ -114,10 +114,6 @@ function getIcon(name){
 
 }
 
-function Alerts(props) {
-                return <MuiAlert elevation={6} variant="filled" {...props} />;
-              }            
-
 const copyToClipboard = str => {
                 const el = document.createElement('textarea');
                 el.value = str;
@@ -169,6 +165,7 @@ export default function RepoCard({Repo}){
                             {Repo.owner.map(name=>                              
                                     <Tooltip key={name.id} title={name.emailId}>
                                         <Chip style={{padding:'4px', margin : '4px'}} 
+                                        data-test={`owner-${name.id}`}
                                         icon={<PersonIcon/> } 
                                         onClick={()=>copyText(name.emailId)} 
                                         label={name.name} variant="outlined"/>                            
@@ -188,6 +185,7 @@ export default function RepoCard({Repo}){
                             {Repo.reviewer.map(name=>                              
                                     <Tooltip key={name.id} title={name.emailId}>
                                         <Chip style={{padding:'4px', margin : '4px'}} 
+                                        data-test={`reviewer-${name.id}`}
                                         icon={<PersonIcon/> } 
                                         onClick={()=>copyText(name.emailId)} 
                                         label={name.name} variant="outlined"/>                                                                    
@@ -228,10 +226,10 @@ export default function RepoCard({Repo}){
                             )}                        
                         </div>
                     </StyledBox>  
-                    <Snackbar open={open} autoHideDuration={1000} onClose={handleClick}>
-                            <Alerts onClose={handleClick} severity="success">
+                    <Snackbar open={open} data-test={'SnackBar'} autoHideDuration={1000} onClose={handleClick}>
+                            <MuiAlert elevation={6} variant="filled" onClose={handleClick} severity="success">
                                 Email copied to clipboard
-                            </Alerts>
+                            </MuiAlert>
                     </Snackbar>                                                             
                 </CardContent>                
             </Card>            

@@ -24,11 +24,11 @@ const StyledButton = styled(Button)`
 const getRepoData = (array) => {  
     let packages = [];
     let Repo = [];  
-    array.map( value => value.dependency.map(dep => packages.push(dep.package)));
+    array.forEach( value => value.dependency.forEach(dep => packages.push(dep.package)));
     packages = packages.filter((value,index) => packages.indexOf(value) === index);
     array.forEach(element => {
       let repo = { name : element.name};    
-      packages.map(Package => {
+      packages.forEach(Package => {
             let dependency = element.dependency.filter(value => value.package === Package);          
             repo[Package] = dependency.length > 0 ? dependency[0].version : '';
       })
