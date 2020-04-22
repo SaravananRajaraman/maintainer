@@ -28,13 +28,13 @@ describe('Should test dispatch actions',()=>{
     it('Should dispatch the change Repo action',async () => {
                     let data = {
                         "Transcation": true,
-                        "Response": [ 				
+                        "Response": 				
                               {
                                   "name"  : "Repo 3",
                                   "link"  : "http://www.Repo3.com"                                            
-                              }]
+                              }
                             };     
-                    const expectedActions = { home : {Repos : [data.Response[0],data.Response[0],data.Response[0]], loading : true} };                                           
+                    const expectedActions = { home : {Repos : [data.Response,data.Response,data.Response], loading : true} };                                           
                     global.fetch = jest.fn().mockResolvedValue({
                         json: () => data
                     });                                                         
