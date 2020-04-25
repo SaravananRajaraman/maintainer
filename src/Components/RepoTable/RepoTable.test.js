@@ -1,6 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
+
 import RepoTable from './index';
 import {findTestAttr} from '../../Utils';
 import initializeStore from '../../initializeStore';
